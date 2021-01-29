@@ -1,0 +1,32 @@
+.p-headerMenu {
+    @media (max-width: 1180px) {
+        // display: none;
+        position: absolute;
+        right: 0;
+        width: 80vw;
+        height: 100vh;
+        background-color: $main;
+    }
+    &_inner {
+        @media (max-width: 1180px) {
+            flex-direction: column;
+        }
+    }
+    &_list {
+        line-height: 5;
+    }
+    &_item {
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            border-bottom: 1px solid $green;
+            transition: all 0.5s;
+        }
+        &:hover::after{
+            width: 100%;
+        }
+    }
+}

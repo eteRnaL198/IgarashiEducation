@@ -1,0 +1,80 @@
+.p-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 160px;
+    @media (max-width: 960px) {
+        margin-bottom: 80px;
+    }
+    &_inner {
+        display: grid;
+        grid-template-columns: repeat(2, 432px);
+        column-gap: 80px;
+        row-gap: 56px;
+        padding-top: 80px;
+        @media (max-width: 960px) {
+            grid-template-columns: repeat(2, 304px);
+            column-gap: 16px;
+        }
+    }
+    &_card {
+        padding: 0 16px 32px 16px;
+    }
+    &_img {
+        width: 100%;
+        transition: all 0.5s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &_imgWrapper {
+        display: block;
+        margin-left: -16px;
+        margin-bottom: 32px;
+        width: 432px;
+        border-radius: 8px;
+        box-shadow: 0px 10px 15px #3333331A;
+        overflow: hidden;
+        @media (max-width: 960px) {
+            width: 304px;
+        }
+    }
+    &_category {
+        display: flex;
+        margin-bottom: 16px;
+        font-size: 1.2rem;
+    }
+    &_tag {
+        margin-right: 16px;
+        font-size: 1.2rem;
+        &-time {
+            @extend .p-blog_tag;
+            letter-spacing: 0.48px;
+            color: $gray;
+        }
+        &-information {
+            @extend .p-blog_tag;
+            letter-spacing: 0.24px;
+            color: $main;
+        }
+        &-class {
+            @extend .p-blog_tag;
+            letter-spacing: 0.24px;
+            color: $green;
+        }
+        &-way {
+            @extend .p-blog_tag;
+            letter-spacing: 0.24px;
+            color: $tag;
+        }
+    }
+    &_text {
+        word-wrap: break-all;
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 2;
+        color: $black;
+        letter-spacing: 1.6px;
+    }
+
+}

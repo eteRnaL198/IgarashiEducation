@@ -1,0 +1,11 @@
+.p-sectionTitle {
+    display: inline-block;
+    margin: 0 auto;
+    color: $black;
+    font-size: 5.6rem;
+    font-weight: bold;
+    letter-spacing: 5.6px;
+    @media (max-width: 960px) {
+        margin: 0 auto 56px auto;
+    }
+}

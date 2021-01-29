@@ -1,0 +1,42 @@
+.p-siteTitle {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: $green;
+    text-transform: capitalize;
+    letter-spacing: 3.6px;
+    font-size: 1.8rem;
+    &::before {
+        content: "";
+        background: url("../img/グループ 215-1.svg") center / cover;
+        width: 56px;
+        height: 56px;
+        margin-right: 16px;
+    }
+    &-bottom {
+        @extend .p-siteTitle;
+        align-items: start;
+        &::before {
+            content: "";
+            background: url("../img/グループ 215-1.svg") center / cover ;
+            width: 32px;
+            height: 32px;
+            margin-right: 16px;
+        }    
+        &::after {
+            content: "全ての人が輝く教育を。";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            color: $green;
+            font-size: 1.2rem;
+            letter-spacing: 2.4px;
+            line-height: 1.5;
+        }
+    }
+    &-sub {
+        font-size: 1.2rem;
+        letter-spacing: 2.4px;
+        color: $green;
+    }
+}

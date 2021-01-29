@@ -1,0 +1,13 @@
+.l-footer {
+    text-align: center;
+    padding-bottom: 24px;
+    &_inner {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 16px;
+        padding-bottom: 32px;
+        border-top: 1px solid $gray;
+    }
+}

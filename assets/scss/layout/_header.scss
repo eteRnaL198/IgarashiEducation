@@ -1,0 +1,19 @@
+.l-header {
+    position: fixed;
+    top: 16px;
+    left: 50%;
+    z-index: 16;
+    transform: translateX(-50%);
+    width: unquote("min(95%, 1300px)");
+    height: 80px;
+    padding: 0 80px;
+    background-color: $white;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .1);
+    border-radius: 56px;
+    &_inner {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        height: 100%;
+    }
+}

@@ -1,0 +1,22 @@
+.p-hum {
+    &_check {
+        position: absolute;
+        left: 50vw;
+    }
+    &_open {
+        display: block;
+        font-size: 7rem;
+        @media (min-width: 1181px){
+            display: none;
+        }
+    }
+    &_item {
+        display: none;
+    }
+    &_back {
+        display: none;
+    }
+    &_close {
+        display: none;
+    }
+}
