@@ -15,6 +15,7 @@
     }
     &-bottom {
         @extend .p-siteTitle;
+        position: relative;
         align-items: start;
         &::before {
             content: "";

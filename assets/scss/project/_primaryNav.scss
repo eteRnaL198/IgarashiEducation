@@ -12,7 +12,7 @@
         justify-content: center;
         position: relative;
         width: 50%;
-        z-index: -10;
+        z-index: 10;
         &:first-of-type { 
             background: url("../img/jeshoots-com-LtNvQHdKkmw-unsplash@2x.png") center / cover;
         }
@@ -34,7 +34,7 @@
         margin: 16px;
         background: $white;
         opacity: 0.75;
-        z-index: -1;
+        z-index: -10;
         }
     }
     &_title {

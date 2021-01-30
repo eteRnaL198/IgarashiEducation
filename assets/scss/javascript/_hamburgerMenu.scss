@@ -1,13 +1,10 @@
-.p-hum {
-    &_check {
-        position: absolute;
-        left: 50vw;
-    }
+.js-hamburger {
     &_open {
         display: block;
+        // display: none;
         font-size: 7rem;
         @media (min-width: 1181px){
-            display: none;
+            // display: none;
         }
     }
     &_item {

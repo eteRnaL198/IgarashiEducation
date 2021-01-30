@@ -1,10 +1,11 @@
 .c-button {
     position: relative;
     padding: 8px 40px 8px 16px;
-    border: 1px solid $green;
+    border: 1px solid $main;
     border-radius: 30px;
+    background: $background;
     box-shadow: 0px 10px 15px #3333331A;
-    z-index: 100;
+    z-index: 10;
     &::before {
         content: "";
         position: absolute;
