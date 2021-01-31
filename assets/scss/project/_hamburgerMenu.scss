@@ -1,0 +1,27 @@
+.p-hamburgerMenu {
+    &_button {
+        display: block;
+        // display: none;
+        font-size: 7rem;
+        @media (min-width: 1181px){
+        }
+    }
+    &_background {
+        // display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 100vh;
+        background-color: $background;
+        z-index: 19;
+        &::after {
+            @extend .p-hamburgerMenu_background;
+            content: '';
+            left: 0;
+            width: 20%;
+            background: $green;
+            opacity: 50%;
+        }
+    }
+}

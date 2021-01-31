@@ -2,11 +2,13 @@
     @media (max-width: 1180px) {
         position: absolute;
         right: 0;
-        width: 80%;
+        // width: 80%;
+        width: 80vw;
     }
     &_inner {
         @media (max-width: 1180px) {
             flex-direction: column;
+            width: 100%;
         }
     }
     &_list {
