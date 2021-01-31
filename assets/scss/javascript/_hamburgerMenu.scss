@@ -1,19 +1,17 @@
 .js-hamburger {
-    &_open {
+    &_button {
         display: block;
         // display: none;
         font-size: 7rem;
         @media (min-width: 1181px){
-            // display: none;
         }
     }
-    &_item {
-        display: none;
-    }
-    &_back {
-        display: none;
-    }
-    &_close {
-        display: none;
+    &_background {
+        width: 80%;
+        height: 100vh;
+        background: $background;
+        &::after {
+            background: $main;
+        }
     }
 }
