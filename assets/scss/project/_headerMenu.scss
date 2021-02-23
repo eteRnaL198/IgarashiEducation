@@ -1,8 +1,8 @@
 .p-headerMenu {
+    // TODO: スクロール可、背景固定
     @media (max-width: 1180px) {
         position: absolute;
-        right: 0;
-        // width: 80%;
+        right: -2.5vw;
         width: 80vw;
     }
     &_inner {

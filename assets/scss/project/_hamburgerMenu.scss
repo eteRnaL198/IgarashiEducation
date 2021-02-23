@@ -1,4 +1,5 @@
 .p-hamburgerMenu {
+    // TODO:ハンバーガーメニュー
     &_button {
         display: block;
         // display: none;
@@ -7,19 +8,22 @@
         }
     }
     &_background {
-        // display: none;
         position: fixed;
         top: 0;
         right: 0;
-        width: 80%;
+        // width: 80vw;
+        width: 80vw;
         height: 100vh;
         background-color: $background;
         z-index: 19;
+        @media (min-width: 1181px) {
+            display: none;
+        }
         &::after {
             @extend .p-hamburgerMenu_background;
             content: '';
             left: 0;
-            width: 20%;
+            width: 20vw;
             background: $green;
             opacity: 50%;
         }
