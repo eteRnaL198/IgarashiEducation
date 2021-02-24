@@ -7,8 +7,7 @@
     }
     &_inner {
         @media (max-width: 1180px) {
-            flex-direction: column;
-            width: 100%;
+            display: none;
         }
     }
     &_list {
