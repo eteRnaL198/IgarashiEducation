@@ -1,24 +1,31 @@
 .p-hamburgerMenu {
     // TODO:ハンバーガーメニュー
+    // TODO: スクロール可、背景固定
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: $background;
+    z-index: 20;
+    @media (min-width: 1181px) {
+        display: none;
+    }
+    &_inner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    &_list {
+        display: flex;
+    }
     &_button {
         display: block;
-        // display: none;
+        display: none;
         font-size: 7rem;
-        @media (min-width: 1181px){
-        }
     }
     &_background {
-        position: fixed;
-        top: 0;
-        right: 0;
-        // width: 80vw;
-        width: 80vw;
-        height: 100vh;
-        background-color: $background;
-        z-index: 19;
-        @media (min-width: 1181px) {
-            display: none;
-        }
         &::after {
             @extend .p-hamburgerMenu_background;
             content: '';

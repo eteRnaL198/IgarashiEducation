@@ -10,6 +10,9 @@
     background-color: $white;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .1);
     border-radius: 56px;
+    @media (max-width: 1180px) { //TODO ブレイクポイント調整
+        padding: 0 16px;
+    }
     &_inner {
         display: flex;
         justify-content: space-between;
