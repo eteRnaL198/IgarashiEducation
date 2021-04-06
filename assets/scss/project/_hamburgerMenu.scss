@@ -24,29 +24,25 @@
     }
     &_inner {
         display: grid;
-        grid-template-areas:
-            "item sub"
-            "button button";
+        grid-template-columns: 1fr 1fr;
         gap: 40px 0;
-        // width: 50%;
         width: 50%;
         margin: auto;
     }
     &_list {
-        display: flex;
+        &-button {
+            grid-column: 1/3;
+        }
     }
     &_item {
-        grid-area: "item";
         font-size: 3.2rem;
         font-weight: bold;
         &-sub {
-            grid-area: "sub";
             text-transform: capitalize;
             font-size: 2.4rem;
             color: $gray;
         }
         &-button {
-            grid-area: "button";
             padding: 16px 32px;
             border-radius: 10rem;
             background-color: $main;

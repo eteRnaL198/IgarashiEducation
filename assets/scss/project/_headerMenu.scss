@@ -8,6 +8,9 @@
     }
     &_list {
         line-height: 5;
+        &:last-child {
+            margin-left: 24px;
+        }
     }
     &_item {
         &::after {

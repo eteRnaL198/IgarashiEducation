@@ -5,11 +5,6 @@
         display: flex;
         align-items: center;
     }
-    &_list {
-        &:last-child {
-            margin-left: 24px;
-        }
-    }
     &_item {
         position: relative;
         display: flex;
