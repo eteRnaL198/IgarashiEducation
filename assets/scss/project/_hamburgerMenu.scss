@@ -7,8 +7,8 @@
     width: 80%;
     height: 100%;
     background-color: $background;
-    z-index: 20;
-    // z-index: 19;
+    // z-index: 20;
+    z-index: 19;
     @media (min-width: 1181px) {
         display: none;
     }
